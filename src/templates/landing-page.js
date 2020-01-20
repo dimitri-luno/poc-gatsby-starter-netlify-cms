@@ -8,6 +8,8 @@ export const LandingPageTemplate = ({
     content,
     contentComponent,
     description,
+    headerimage,
+    subtitle,
     title,
 }) => {
     const LandingPageContent = contentComponent || Content
