@@ -49,7 +49,7 @@ LandingPageTemplate.propTypes = {
           content={post.html}
           contentComponent={HTMLContent}
           description={post.frontmatter.description}
-          headerimage={frontmatter.headerimage}
+          headerimage={post.frontmatter.headerimage}
           subtitle={post.frontmatter.subtitle}
           title={post.frontmatter.title}
         />
