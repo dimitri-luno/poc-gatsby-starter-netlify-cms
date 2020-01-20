@@ -14,9 +14,21 @@ export const LandingPageTemplate = ({
 
     return (
         <section className="section">
+          <div
+            className="full-width-image margin-top-0"
+            style={{
+              backgroundImage: `url(${
+                !!headerimage.childImageSharp ? headerimage.childImageSharp.fluid.src : headerimage
+              })`,
+              backgroundPosition: `top left`,
+              backgroundAttachment: `fixed`,
+            }}
+          >
             <h1>{title}</h1>
-            <p>{description}</p>
-            <LandingPageContent content={content} />
+            <p>{subtitle}</p>
+          </div>
+          <p>{description}</p>
+          <LandingPageContent content={content} />
         </section>
     )
 }
@@ -37,6 +49,8 @@ LandingPageTemplate.propTypes = {
           content={post.html}
           contentComponent={HTMLContent}
           description={post.frontmatter.description}
+          headerimage={frontmatter.headerimage}
+          subtitle={post.frontmatter.subtitle}
           title={post.frontmatter.title}
         />
       </Layout>
