@@ -7,8 +7,18 @@ export default class LandingPagesIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div>
-          <h1>
+          <div
+          className="full-width-container margin-top-0"
+        >
+          <h1
+            className="has-text-weight-bold is-size-1"
+            style={{
+              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+              backgroundColor: '#f40',
+              color: 'white',
+              padding: '1rem',
+            }}
+          >
             List of Landing Pages
           </h1>
         </div>
