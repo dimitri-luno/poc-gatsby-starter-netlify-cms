@@ -59,8 +59,15 @@ LandingPageTemplate.propTypes = {
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          subtitle
+          headerimage {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           description
-          tags
         }
       }
     }
