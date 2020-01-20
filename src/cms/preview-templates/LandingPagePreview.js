@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import { LandingPageTemplate } from '../../templates/landing-page'
 
 const LandingPagePreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(['data', 'tags'])
   return (
     <LandingPageTemplate
       content={widgetFor('body')}
       description={entry.getIn(['data', 'description'])}
+      subtitle={entry.getIn(['data', 'subtitle'])}
       title={entry.getIn(['data', 'title'])}
     />
   )
