@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class LandingPagesList extends React.Component {
   render() {
@@ -15,23 +14,14 @@ class LandingPagesList extends React.Component {
             <li key={landingPage.id}>
               <p>
                 <Link
-                  className="title"
                   to={landingPage.fields.slug}
                 >
                   {landingPage.frontmatter.title}
                 </Link>
-                <span> &bull; </span>
+                <span>&nbsp;</span>
                 <span>
-                  {landingPage.frontmatter.date}
+                  ({landingPage.frontmatter.date})
                 </span>
-              </p>
-              <p>
-                {landingPage.excerpt}
-                <br />
-                <br />
-                <Link className="button" to={landingPage.fields.slug}>
-                  Go To Landing Page →
-                </Link>
               </p>
             </li>
           ))}
