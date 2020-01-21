@@ -69,7 +69,7 @@ collections:
     label: "Landing Pages"
     folder: "src/pages/landingPages"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{fields.slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "landing-page"}
       - {label: "Title", name: "title", widget: "string"}
