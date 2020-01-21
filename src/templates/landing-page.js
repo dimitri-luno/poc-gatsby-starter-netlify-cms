@@ -26,9 +26,10 @@ export const LandingPageTemplate = ({
             backgroundAttachment: `fixed`,
           }}
           >
-            <div class="title"></div>
+            <div class="title">
               <h1>{title}</h1>
               <LandingPageContent content={subtitle} />
+            </div>
             <div class="landing-page ln-signup-email">
               <h3>Sign up form</h3>
               <form action="https://staging.luno.com/en/signup" method="GET" _lpchecked="1">
