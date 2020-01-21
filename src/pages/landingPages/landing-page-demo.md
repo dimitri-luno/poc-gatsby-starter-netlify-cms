@@ -1,6 +1,7 @@
 ---
 templateKey: landing-page
 title: Demo landing Page
+slug: landing-page-demo
 subtitle: >-
   Subtitle, which can contain
   [links](https://app.netlify.com/sites/admiring-khorana-e96482/overview)
